@@ -10,6 +10,9 @@ This document tracks the implementation status of ZetuBIZ requirements.
 ### Milestone D0 — Documentation and Product Readiness
 - [x] Add expanded all-in-one platform requirements
 - [x] Add team workflow and documentation approval gate
+- [x] Draft AI-tool-agnostic task handover template
+- [x] Draft 15-member team assignment and ownership matrix
+- [ ] Map team slots to actual members and confirm skills/availability
 - [x] Link expanded requirements from README and master spec
 - [x] Correct Supabase Auth guidance in proposed database documentation
 - [x] Draft screen-by-screen UX specification
@@ -262,6 +265,8 @@ This document tracks the implementation status of ZetuBIZ requirements.
 - [x] Master specification (ZetuBIZ-MASTER-SPEC.md)
 - [x] Expanded platform requirements (ALL-IN-ONE-PLATFORM-REQUIREMENTS.md)
 - [x] Team workflow (TEAM-WORKFLOW.md)
+- [x] Task handover template draft (TASK-HANDOVER-TEMPLATE.md)
+- [x] 15-member assignment matrix draft (TEAM-ASSIGNMENT-MATRIX.md)
 - [x] UX specification draft (UX-SPECIFICATION.md)
 - [x] Permissions matrix draft (PERMISSIONS-MATRIX.md)
 - [x] Data dictionary draft (DATA-DICTIONARY.md)
@@ -322,18 +327,22 @@ No technical debt at this time (greenfield project).
 
 ### Current Risks
 
-1. **Greenfield Project:** No existing codebase, starting from scratch
-   - **Mitigation:** Follow specification closely, implement incrementally
+1. **Greenfield Project:** No application codebase is verified; the repository is currently specification-focused.
+   - **Mitigation:** Complete and approve documentation before implementation.
 
-2. **Payment Provider Integration:** Complex integrations with multiple providers
-   - **Mitigation:** Implement one provider at a time, use test environments
+2. **Team assignments are provisional:** Actual member names, skills, and availability have not yet been mapped to the proposed 15 slots.
+   - **Mitigation:** Product owner confirms the roster, capacity, and reviewers before assigning work.
 
-3. **Multi-Tenancy Security:** Critical requirement for tenant isolation
-   - **Mitigation:** Implement RLS policies early, test thoroughly
+3. **Payment provider integration:** Capabilities and operational requirements must be verified before choosing an implementation path.
+   - **Mitigation:** Record provider evidence and decisions in the integration contracts/decision log.
+
+4. **Multi-tenancy security:** Tenant isolation is a critical design requirement and remains subject to architecture review and negative tests.
+   - **Mitigation:** Complete threat modelling, tenant-scoped data design, RLS review, and test requirements before implementation.
 
 ### Current Blockers
 
-None
+- Product-owner approval of the documentation gate has not been recorded.
+- The proposed 15-member matrix still needs mapping to actual team members.
 
 ## Next Steps
 
