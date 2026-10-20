@@ -21,7 +21,7 @@ The long-term vision is one connected workspace for business operations, includi
 - Analytics, platform administration, and a permission-aware AI assistant
 - Optional advanced capabilities such as a browser call centre
 
-These are planned modules, not claims of existing functionality. The team will deliver them in stages based on customer validation, dependencies, security, and operational readiness. ReaTech360 is a feature benchmark; ZetuBIZ will maintain its own product identity and implementation.
+These are planned modules, not claims of existing functionality. The team will deliver them in stages based on customer validation, dependencies, security, and operational readiness. ZetuBIZ will maintain its own product identity, requirements, design, and implementation.
 
 ## Current documentation
 
