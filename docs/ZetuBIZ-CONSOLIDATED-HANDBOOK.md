@@ -1,12 +1,12 @@
 # ZetuBIZ Consolidated Documentation Handbook
 
-> **Purpose:** A single reading document that brings the project's existing documentation together in one place for product-owner review, team coordination, and future handover.
+> **Purpose:** A unified reading copy of the current ZetuBIZ documentation for product-owner review, team coordination and portable handover.
 >
-> **Documentation-first gate:** This handbook is a consolidation of the source documents, not approval to implement. Application implementation, production migrations, and deployment remain blocked until the product owner explicitly reviews and approves the documentation gate.
+> **Documentation-first gate:** This is a consolidation, not approval to implement. Application implementation, production migrations and deployment remain blocked until the product owner explicitly approves the documentation gate.
 >
-> **Source-of-truth rule:** The individual files linked in the repository remain the editable source documents for their respective subjects. This consolidated handbook is a reading and review copy. When content conflicts, record the conflict in `docs/DECISIONS.md`; do not silently choose a version. Rebuild this handbook after source documents change.
+> **Source-of-truth rule:** The individual source files remain the editable references. If sources conflict, record the conflict in `docs/DECISIONS.md` rather than silently choosing a version. Regenerate this handbook after source documents change.
 >
-> **Included files:** `docs/ZetuBIZ-MASTER-SPEC.md`, `docs/ALL-IN-ONE-PLATFORM-REQUIREMENTS.md`, `docs/ARCHITECTURE.md`, `docs/DATABASE.md`, `docs/DATA-DICTIONARY.md`, `docs/DECISIONS.md`, `docs/DEPLOYMENT.md`, `docs/DEVELOPMENT.md`, `docs/ENVIRONMENT.md`, `docs/HANDOVER.md`, `docs/IMPLEMENTATION-STATUS.md`, `docs/PERMISSIONS-MATRIX.md`, `docs/TASK-HANDOVER-TEMPLATE.md`, `docs/TEAM-ASSIGNMENT-MATRIX.md`, `docs/TEAM-WORKFLOW.md`, `docs/TEST-TRACEABILITY.md`, `docs/TESTING.md`, `docs/UX-SPECIFICATION.md`.
+> **Included source documents:** `docs/ZetuBIZ-MASTER-SPEC.md`, `docs/ALL-IN-ONE-PLATFORM-REQUIREMENTS.md`, `docs/ARCHITECTURE.md`, `docs/DATABASE.md`, `docs/DATA-DICTIONARY.md`, `docs/DECISIONS.md`, `docs/DEPLOYMENT.md`, `docs/DEVELOPMENT.md`, `docs/ENVIRONMENT.md`, `docs/HANDOVER.md`, `docs/IMPLEMENTATION-STATUS.md`, `docs/PERMISSIONS-MATRIX.md`, `docs/TASK-HANDOVER-TEMPLATE.md`, `docs/TEAM-ASSIGNMENT-MATRIX.md`, `docs/TEAM-WORKFLOW.md`, `docs/TEST-TRACEABILITY.md`, `docs/TESTING.md`, `docs/UX-SPECIFICATION.md`, `docs/WORKFORCE-AND-INDUSTRY-ROLES.md`.
 
 ## Contents
 
@@ -28,6 +28,7 @@
 16. [TEST TRACEABILITY](#document-16)
 17. [TESTING](#document-17)
 18. [UX SPECIFICATION](#document-18)
+19. [WORKFORCE AND INDUSTRY ROLES](#document-19)
 
 ---
 
@@ -37,7 +38,7 @@
 
 # Document 1: `docs/ZetuBIZ-MASTER-SPEC.md`
 
-> Source path: [`docs/ZetuBIZ-MASTER-SPEC.md`](../ZetuBIZ-MASTER-SPEC.md)
+> Source file: [`docs/ZetuBIZ-MASTER-SPEC.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/ZetuBIZ-MASTER-SPEC.md)
 
 ---
 
@@ -1502,7 +1503,7 @@ These documents are proposed until reviewed. Resolve contradictions through the 
 
 # Document 2: `docs/ALL-IN-ONE-PLATFORM-REQUIREMENTS.md`
 
-> Source path: [`docs/ALL-IN-ONE-PLATFORM-REQUIREMENTS.md`](../ALL-IN-ONE-PLATFORM-REQUIREMENTS.md)
+> Source file: [`docs/ALL-IN-ONE-PLATFORM-REQUIREMENTS.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/ALL-IN-ONE-PLATFORM-REQUIREMENTS.md)
 
 ---
 
@@ -1946,7 +1947,7 @@ This file expands, but does not replace, the existing master specification. Keep
 
 # Document 3: `docs/ARCHITECTURE.md`
 
-> Source path: [`docs/ARCHITECTURE.md`](../ARCHITECTURE.md)
+> Source file: [`docs/ARCHITECTURE.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/ARCHITECTURE.md)
 
 ---
 
@@ -2448,7 +2449,7 @@ Response:
 
 # Document 4: `docs/DATABASE.md`
 
-> Source path: [`docs/DATABASE.md`](../DATABASE.md)
+> Source file: [`docs/DATABASE.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/DATABASE.md)
 
 ---
 
@@ -3254,7 +3255,7 @@ COMMIT;
 
 # Document 5: `docs/DATA-DICTIONARY.md`
 
-> Source path: [`docs/DATA-DICTIONARY.md`](../DATA-DICTIONARY.md)
+> Source file: [`docs/DATA-DICTIONARY.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/DATA-DICTIONARY.md)
 
 ---
 
@@ -3383,7 +3384,7 @@ Conceptual relationship outline:
 
 # Document 6: `docs/DECISIONS.md`
 
-> Source path: [`docs/DECISIONS.md`](../DECISIONS.md)
+> Source file: [`docs/DECISIONS.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/DECISIONS.md)
 
 ---
 
@@ -3458,7 +3459,7 @@ Never place secrets, customer data, or credentials in decision records.
 
 # Document 7: `docs/DEPLOYMENT.md`
 
-> Source path: [`docs/DEPLOYMENT.md`](../DEPLOYMENT.md)
+> Source file: [`docs/DEPLOYMENT.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/DEPLOYMENT.md)
 
 ---
 
@@ -3935,7 +3936,7 @@ If production issue detected:
 
 # Document 8: `docs/DEVELOPMENT.md`
 
-> Source path: [`docs/DEVELOPMENT.md`](../DEVELOPMENT.md)
+> Source file: [`docs/DEVELOPMENT.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/DEVELOPMENT.md)
 
 ---
 
@@ -4438,7 +4439,7 @@ Before any implementation:
 
 # Document 9: `docs/ENVIRONMENT.md`
 
-> Source path: [`docs/ENVIRONMENT.md`](../ENVIRONMENT.md)
+> Source file: [`docs/ENVIRONMENT.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/ENVIRONMENT.md)
 
 ---
 
@@ -4826,7 +4827,7 @@ LOG_LEVEL=debug
 
 # Document 10: `docs/HANDOVER.md`
 
-> Source path: [`docs/HANDOVER.md`](../HANDOVER.md)
+> Source file: [`docs/HANDOVER.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/HANDOVER.md)
 
 ---
 
@@ -4856,6 +4857,12 @@ This document provides a concise handover for the next coding agent (OpenCode).
 - Codebase initialization
 - Database setup
 - Infrastructure configuration
+
+## Consolidated Documentation
+
+- **Unified reading copy:** `docs/ZetuBIZ-CONSOLIDATED-HANDBOOK.md` combines the current 18 documentation files in one long-form document.
+- The source documents remain the editable references for their subjects. If any source changes, regenerate the consolidated handbook before handover.
+- Consolidation is not product-owner approval; implementation remains blocked until the documentation gate is explicitly approved and recorded.
 
 ## Current Architecture
 
@@ -5003,7 +5010,7 @@ Do not run setup or migration commands yet. Follow the documentation gate in `do
 
 # Document 11: `docs/IMPLEMENTATION-STATUS.md`
 
-> Source path: [`docs/IMPLEMENTATION-STATUS.md`](../IMPLEMENTATION-STATUS.md)
+> Source file: [`docs/IMPLEMENTATION-STATUS.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/IMPLEMENTATION-STATUS.md)
 
 ---
 
@@ -5018,6 +5025,7 @@ This document tracks the implementation status of ZetuBIZ requirements.
 
 ### Milestone D0 — Documentation and Product Readiness
 - [x] Add expanded all-in-one platform requirements
+- [x] Consolidate 18 documentation files into `ZetuBIZ-CONSOLIDATED-HANDBOOK.md` for unified review
 - [x] Add team workflow and documentation approval gate
 - [x] Draft AI-tool-agnostic task handover template
 - [x] Draft 15-member team assignment and ownership matrix
@@ -5385,7 +5393,7 @@ No technical debt at this time (greenfield project).
 
 # Document 12: `docs/PERMISSIONS-MATRIX.md`
 
-> Source path: [`docs/PERMISSIONS-MATRIX.md`](../PERMISSIONS-MATRIX.md)
+> Source file: [`docs/PERMISSIONS-MATRIX.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/PERMISSIONS-MATRIX.md)
 
 ---
 
@@ -5505,7 +5513,7 @@ This matrix is a proposal. The product owner, domain leads, and security reviewe
 
 # Document 13: `docs/TASK-HANDOVER-TEMPLATE.md`
 
-> Source path: [`docs/TASK-HANDOVER-TEMPLATE.md`](../TASK-HANDOVER-TEMPLATE.md)
+> Source file: [`docs/TASK-HANDOVER-TEMPLATE.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/TASK-HANDOVER-TEMPLATE.md)
 
 ---
 
@@ -5660,7 +5668,7 @@ A handover is not complete if it only says “done,” “continue,” or “the
 
 # Document 14: `docs/TEAM-ASSIGNMENT-MATRIX.md`
 
-> Source path: [`docs/TEAM-ASSIGNMENT-MATRIX.md`](../TEAM-ASSIGNMENT-MATRIX.md)
+> Source file: [`docs/TEAM-ASSIGNMENT-MATRIX.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/TEAM-ASSIGNMENT-MATRIX.md)
 
 ---
 
@@ -5684,25 +5692,29 @@ A handover is not complete if it only says “done,” “continue,” or “the
 
 ## 2. Proposed allocation of all 15 team slots
 
+The roster deliberately includes technical, infrastructure, security, marketing, sales, support, and operational capabilities. One person may cover adjacent duties only where they have the skills and capacity; sensitive reviews must remain independent.
+
 | Slot | Primary role | Accountable area | Initial deliverables | Primary reviewer |
 |---|---|---|---|---|
-| T01 | Product owner / product lead | Product direction and approval | Target segment, success measures, Release 1 scope, decision ownership, documentation gate approval | Independent team reviewer for clarity; product owner retains final approval |
-| T02 | Product analyst | Customer discovery and requirements | Interview plan, user problems, personas, requirement IDs, measurable outcomes | T01 |
-| T03 | UX and information architecture lead | Onboarding and navigation | Onboarding questions and branches, sitemap, role-aware navigation, workspace setup states | T02 |
-| T04 | UI design and accessibility lead | Design system and responsive UX | Tokens, typography, components, responsive rules, keyboard and contrast criteria | T03 |
-| T05 | Solution architect | System boundaries and architecture | Architecture overview, module boundaries, deployment options, ADR proposals | T01 + T06 |
-| T06 | Security and tenancy lead | Threat model and tenant boundaries | Threat model, authorization principles, tenant isolation requirements, security review checklist | T05; T01 for scope decisions |
-| T07 | Data model lead | ERD and database integrity | ERD, reviewed data dictionary, tenant-scoped relationships, deletion and retention rules | T06 + T05 |
-| T08 | API and integration lead | API contracts and provider behaviour | API contracts, error model, webhook verification, idempotency, retry and timeout rules | T05 + T06 |
-| T09 | Finance domain lead | Quotations, invoices, receipts, credit notes | Financial workflows, numbering, immutable snapshots, rounding and correction rules | T02 + T07 |
-| T10 | Payments and reconciliation lead | Payment lifecycle | Payment states, allocations, reconciliation, provider capability verification, exception handling | T08 + T09 + T06 |
-| T11 | Inventory and operations lead | Products, stock, purchasing, POS | Inventory workflows, stock movements, purchasing and stock-count requirements | T02 + T07 |
-| T12 | HR and reporting lead | Employee workflows and reports | HR requirements, leave/attendance boundaries, report definitions, compliance questions | T02 + T07; qualified compliance review where needed |
-| T13 | QA and traceability lead | Test strategy and acceptance evidence | Requirement-to-test map, test levels, negative security tests, release acceptance criteria | T06 + domain owners |
-| T14 | Operations and reliability lead | Deployment, monitoring, recovery, support | Environment separation, secrets handling, backups, recovery drills, monitoring and incident procedures | T05 + T06 |
-| T15 | Documentation integration and customer feedback coordinator | Cross-document consistency and feedback loop | Link checks, terminology consistency, contradiction register, review notes, customer feedback tracking | T01 + relevant domain reviewer |
+| T01 | Product owner / product lead | Product direction, priorities, final approvals | Target segment, success measures, Release 1 scope, decision ownership, documentation gate approval | Independent reviewer for clarity; product owner retains final approval |
+| T02 | Product analyst / customer researcher | Customer needs and requirements | Interview plan, personas, requirement IDs, workflow research, measurable outcomes | T01 |
+| T03 | UX/UI and accessibility designer | User journeys, interface and design system | Sitemap, onboarding flows, prototypes/specifications, responsive and accessibility rules | T02 + T14 |
+| T04 | Frontend / web experience lead | Web interface requirements and future implementation planning | Frontend boundaries, responsive behaviour, component contracts, browser support | T03 + T05 |
+| T05 | Backend / database architect | APIs, data model, application architecture | Architecture, module boundaries, ERD/data contracts, migration principles | T07 + T06 |
+| T06 | Network and cloud administrator | DNS, domains, networking, hosting, environments and connectivity | Network/deployment topology, DNS/TLS, access controls, environment separation, recovery runbook | T05 + T07 |
+| T07 | Cybersecurity and privacy lead | Threat model, identity, tenant boundaries and data protection | Threat model, authorization rules, privacy/retention requirements, security review checklist | T05; independent review for high-risk changes |
+| T08 | API, integrations and payments lead | External providers and integration behaviour | API contracts, payment provider capability checks, webhooks, idempotency, retries and failure states | T05 + T07 |
+| T09 | Finance and business-process specialist | Quotations, invoices, expenses, reconciliation and reporting rules | Financial workflows, calculations, auditability, reconciliation exceptions and compliance questions | T02 + T08 + T14 |
+| T10 | Social media manager / community lead | Social channels, publishing and community engagement | Channel strategy, content calendar, publishing approvals, moderation and engagement metrics | T01 + T11 |
+| T11 | Digital marketer / content and SEO specialist | Brand messaging, website content, campaigns and discovery | Content plan, SEO requirements, campaign measurement, landing-page copy and analytics requirements | T01 + T10 |
+| T12 | Sales, partnerships and growth lead | Customer acquisition and commercial partnerships | Lead pipeline, outreach process, partnership targets, CRM requirements and sales feedback | T01 + T02 |
+| T13 | Customer support and customer-success lead | Onboarding, help, feedback and retention | Support workflow, help content, escalation rules, feedback loop and service measures | T01 + T15 |
+| T14 | QA, accessibility and release-quality lead | Testability and acceptance evidence | Requirement-to-test mapping, regression plan, security-negative tests, accessibility and release criteria | T07 + relevant domain owners |
+| T15 | Operations, documentation and delivery coordinator | Cross-team coordination, handovers and operational readiness | Documentation consistency, task tracking, support/incident process, meeting notes and handovers | T01 + relevant domain reviewer |
 
-**Capacity note:** This is a starting allocation, not a claim that every person has the same skill or available hours. The product owner should adjust roles after a short skills and availability check. T01 is accountable for approval, but must not self-review their own authored technical or product documents.
+**Specialist coverage note:** This 15-person allocation is a starting team structure, not a claim that every specialist skill is already present. If ZetuBIZ later needs dedicated HR/payroll compliance, inventory/POS, legal/tax, data analytics, paid advertising, video/design production, or advanced network engineering expertise, assign a qualified contributor or external reviewer before approving that domain. Do not treat general experience as a substitute for regulated professional advice.
+
+**Capacity note:** Confirm each person's actual skills, availability, preferred work, and backup coverage before assigning by name. T01 owns final product decisions but must not self-review their own technical or product work.
 
 ## 3. Initial documentation work packages
 
@@ -5785,7 +5797,7 @@ This matrix is successful when every deliverable has a real owner and reviewer, 
 
 # Document 15: `docs/TEAM-WORKFLOW.md`
 
-> Source path: [`docs/TEAM-WORKFLOW.md`](../TEAM-WORKFLOW.md)
+> Source file: [`docs/TEAM-WORKFLOW.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/TEAM-WORKFLOW.md)
 
 ---
 
@@ -6028,7 +6040,7 @@ Every task handover must use [Task Handover Template](TASK-HANDOVER-TEMPLATE.md)
 
 # Document 16: `docs/TEST-TRACEABILITY.md`
 
-> Source path: [`docs/TEST-TRACEABILITY.md`](../TEST-TRACEABILITY.md)
+> Source file: [`docs/TEST-TRACEABILITY.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/TEST-TRACEABILITY.md)
 
 ---
 
@@ -6100,7 +6112,7 @@ Release 1 cannot be approved while critical/high-severity security issues remain
 
 # Document 17: `docs/TESTING.md`
 
-> Source path: [`docs/TESTING.md`](../TESTING.md)
+> Source file: [`docs/TESTING.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/TESTING.md)
 
 ---
 
@@ -6570,7 +6582,7 @@ Track test debt in `docs/IMPLEMENTATION-STATUS.md`:
 
 # Document 18: `docs/UX-SPECIFICATION.md`
 
-> Source path: [`docs/UX-SPECIFICATION.md`](../UX-SPECIFICATION.md)
+> Source file: [`docs/UX-SPECIFICATION.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/UX-SPECIFICATION.md)
 
 ---
 
@@ -6810,5 +6822,205 @@ For download/print:
 - [ ] Accessibility and responsive review is complete.
 - [ ] Each primary action maps to an API/domain workflow and acceptance test.
 - [ ] Product owner and UX reviewer approve the spec before implementation.
+
+---
+
+
+
+<a id="document-19"></a>
+
+# Document 19: `docs/WORKFORCE-AND-INDUSTRY-ROLES.md`
+
+> Source file: [`docs/WORKFORCE-AND-INDUSTRY-ROLES.md`](https://github.com/learninghub44/ZetuBIZ/blob/main/docs/WORKFORCE-AND-INDUSTRY-ROLES.md)
+
+---
+
+# ZetuBIZ Workforce, Specialist and Industry Role Catalogue
+
+**Status:** Proposed product requirements for review; not implemented  
+**Purpose:** Ensure ZetuBIZ considers a broad range of professions, small businesses, teams and specialist workflows rather than only software developers or office administrators.
+
+## 1. Product principle
+
+ZetuBIZ is a configurable business operations platform, not a job-title directory. Roles listed here describe customer segments, workspace responsibilities and possible workflow needs. They do not automatically grant application permissions. Access must always be configured through explicit, tenant-scoped permissions.
+
+Do not promise a dedicated feature for every occupation in the first release. Validate demand, define workflows and sequence modules based on customer evidence, risk and delivery capacity.
+
+## 2. Technology, infrastructure and security
+
+Potential customer profiles:
+- Network administrators and network engineers
+- Systems administrators and IT support technicians
+- Cloud administrators and infrastructure engineers
+- Cybersecurity analysts, security consultants and privacy practitioners
+- DevOps, site reliability and platform engineers
+- Web developers, software engineers and QA testers
+- Database administrators, data analysts and BI specialists
+- Hardware, device, printer, CCTV and technical maintenance providers
+
+Potential workflows: service enquiries, client/contact records, quotations, recurring support contracts, projects, time tracking, service-level agreements, inventory/assets, incident records, expenses, invoices, renewals and customer communication. Network configuration secrets, credentials and sensitive incident data must not be stored in ordinary notes; privileged technical records require dedicated access controls and audit logging.
+
+## 3. Marketing, media and communications
+
+Potential customer profiles:
+- Social media managers and community managers
+- Digital marketers and performance advertising specialists
+- SEO specialists and content strategists
+- Copywriters, editors and translators
+- Graphic designers, brand designers and illustrators
+- Photographers, videographers and video editors
+- Influencer and creator managers
+- Public relations and communications consultants
+- Email marketing and marketing automation specialists
+
+Potential workflows: campaign briefs, content calendars, approval steps, asset libraries, client approvals, campaign budgets, publishing schedules, lead capture, marketing attribution, invoices, retainers, deliverables and reports. Direct publishing to social networks is a separate integration requiring official API capability verification, user consent, token security and platform-policy review. Do not assume every social network permits every action.
+
+## 4. Sales, commerce and customer relationships
+
+Potential customer profiles:
+- Sales representatives and sales managers
+- Business development and partnership managers
+- Account managers and customer-success teams
+- Customer support agents and contact-centre operators
+- Retailers, wholesalers, distributors and importers
+- E-commerce sellers and marketplace operators
+- Field sales teams and delivery coordinators
+- Procurement officers, suppliers and purchasing teams
+
+Potential workflows: lead pipelines, follow-ups, customer history, quotations, orders, invoices, stock, supplier records, returns, payment allocations, customer credit, service cases and performance reporting.
+
+## 5. Professional and business services
+
+Potential customer profiles:
+- Freelancers and independent consultants
+- Agencies and studios
+- Accountants and bookkeepers
+- Business, HR and operations consultants
+- Lawyers and legal-service firms
+- Architects, engineers and surveyors
+- Training providers, tutors and education consultants
+- Researchers and data-service providers
+- Event planners and creative production teams
+
+Potential workflows: client onboarding, proposals, engagement terms, milestones, time tracking, document approvals, expenses, billing, recurring retainers and project profitability. Regulated or legally sensitive services need domain review before specialised compliance claims are made.
+
+## 6. Field services, trades and maintenance
+
+Potential customer profiles:
+- Electricians, plumbers and installers
+- Contractors, builders and property maintenance teams
+- Solar and renewable-energy installers
+- Cleaning, pest-control and landscaping businesses
+- Appliance, phone, computer and equipment repairers
+- Automotive repair and service providers
+- Logistics, transport and delivery operators
+- Security-system and network-installation teams
+
+Potential workflows: enquiries, site visits, bookings, work orders, quotations, job assignment, checklists, parts and stock usage, photos/documents, customer sign-off, scheduling, invoices and after-service reminders.
+
+## 7. People, administration and business operations
+
+Potential customer profiles:
+- HR officers and recruiters
+- Office and administrative managers
+- Project and operations managers
+- Payroll and benefits administrators
+- Training and learning coordinators
+- Facilities and fleet managers
+- Compliance and quality coordinators
+
+Potential workflows: employee records, leave, attendance, approvals, recruitment tracking, training, policies, assets, task assignments and reports. Payroll, tax, employment-law and regulated compliance workflows require current qualified review for each target jurisdiction.
+
+## 8. Hospitality, wellness, property and local services
+
+Potential customer profiles:
+- Salons, barbers and beauty professionals
+- Fitness trainers and wellness studios
+- Clinics and healthcare-service businesses
+- Restaurants, caterers and food businesses
+- Hotels, guest houses and tour operators
+- Property managers, landlords and real-estate agents
+- Photographers, event venues and event service providers
+- Repair shops and other appointment-based services
+
+Potential workflows: bookings, schedules, service catalogues, deposits, customer reminders, invoices, inventory, staff rosters, feedback and repeat-customer management. Health and other sensitive personal data should not be collected unless a separately reviewed use case, lawful basis, security model and retention policy are approved.
+
+## 9. Suggested workspace roles and permission boundaries
+
+Use permission presets that can be customised per business:
+- Owner
+- Workspace administrator
+- Finance / accountant
+- Sales / account manager
+- Marketing / content publisher
+- Customer support
+- Operations / project manager
+- Inventory / purchasing
+- HR (with separate salary permissions)
+- IT / network administrator
+- Security auditor
+- Staff / contributor
+- Read-only reviewer / external accountant
+- Customer / client portal user
+- Platform support administrator with controlled, audited access
+
+A job title is not a permission. For example, a network administrator may manage infrastructure settings only if explicitly granted; a social media marketer may draft campaigns but not access payroll or bank/payment credentials. Separate content creation, approval, publishing, billing, exports and credential management where risk warrants it. Use least privilege, separation of duties, audit logs, and periodic access reviews.
+
+## 10. Social media and marketing module requirements to evaluate
+
+Do not assume all items belong in Release 1. Assess each during customer discovery:
+- Multi-brand and multi-client workspaces
+- Campaign goals, audiences, channels, budgets and dates
+- Content calendar and draft/scheduled/published/failed states
+- Post and asset approvals with comments and version history
+- Image/video/document asset library with rights and consent metadata
+- Campaign task assignment, deadlines and workload
+- UTM links and lead-source tracking
+- Analytics imports and clearly defined metric calculations
+- Client approval links with expiry and revocation
+- Campaign expense tracking, retainers, quotations and invoices
+- Social account connection through supported official APIs only
+- Secure token storage, scope review, revocation and token-expiry handling
+- Publishing queue, retry rules and visible platform errors
+- Moderation and community response tracking where API terms allow
+- Consent, opt-out, privacy and retention settings for marketing contacts
+- Clear distinction between measured results and estimates
+
+## 11. Network and IT administration module requirements to evaluate
+
+Potential needs:
+- Client/site/device inventory and ownership
+- Support tickets, incidents, priorities and escalation
+- Maintenance schedules and recurring service contracts
+- Site visits, work orders, time entries and service reports
+- Asset warranty, licence and renewal reminders
+- Approved network diagrams and documentation attachments
+- Change records, approval history and rollback notes
+- SLA targets, response/resolution tracking and customer updates
+- Restricted access to sensitive infrastructure records
+- Audit trails for viewing or changing sensitive records
+- Secure secret-management integration rather than plain-text credential fields
+
+This is not a substitute for dedicated monitoring, ticketing, network configuration or secret-management systems unless those integrations and controls are separately designed and validated.
+
+## 12. Validation and release planning
+
+Before adding an industry or specialist module:
+1. Interview real users in that segment.
+2. Record the current process, most expensive problem, existing tools and willingness to pay.
+3. Map shared workflows to existing ZetuBIZ modules before proposing a separate subsystem.
+4. Define roles, data sensitivity, permission boundaries and retention needs.
+5. Document external integrations and verify official API/compliance requirements.
+6. Add requirement IDs, acceptance criteria and negative security tests.
+7. Estimate operational cost and support burden.
+8. Record the release decision in `docs/DECISIONS.md`.
+
+**Acceptance checklist**
+- [ ] Roles represent both technical and non-technical customer segments.
+- [ ] Role presets do not silently grant permissions.
+- [ ] Marketing/social integrations are capability-verified before commitment.
+- [ ] Network/IT workflows protect infrastructure details and secrets.
+- [ ] Regulated domains have qualified review.
+- [ ] Release 1 remains focused on validated, achievable customer needs.
 
 ---
