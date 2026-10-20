@@ -18,25 +18,29 @@
 
 ## 2. Proposed allocation of all 15 team slots
 
+The roster deliberately includes technical, infrastructure, security, marketing, sales, support, and operational capabilities. One person may cover adjacent duties only where they have the skills and capacity; sensitive reviews must remain independent.
+
 | Slot | Primary role | Accountable area | Initial deliverables | Primary reviewer |
 |---|---|---|---|---|
-| T01 | Product owner / product lead | Product direction and approval | Target segment, success measures, Release 1 scope, decision ownership, documentation gate approval | Independent team reviewer for clarity; product owner retains final approval |
-| T02 | Product analyst | Customer discovery and requirements | Interview plan, user problems, personas, requirement IDs, measurable outcomes | T01 |
-| T03 | UX and information architecture lead | Onboarding and navigation | Onboarding questions and branches, sitemap, role-aware navigation, workspace setup states | T02 |
-| T04 | UI design and accessibility lead | Design system and responsive UX | Tokens, typography, components, responsive rules, keyboard and contrast criteria | T03 |
-| T05 | Solution architect | System boundaries and architecture | Architecture overview, module boundaries, deployment options, ADR proposals | T01 + T06 |
-| T06 | Security and tenancy lead | Threat model and tenant boundaries | Threat model, authorization principles, tenant isolation requirements, security review checklist | T05; T01 for scope decisions |
-| T07 | Data model lead | ERD and database integrity | ERD, reviewed data dictionary, tenant-scoped relationships, deletion and retention rules | T06 + T05 |
-| T08 | API and integration lead | API contracts and provider behaviour | API contracts, error model, webhook verification, idempotency, retry and timeout rules | T05 + T06 |
-| T09 | Finance domain lead | Quotations, invoices, receipts, credit notes | Financial workflows, numbering, immutable snapshots, rounding and correction rules | T02 + T07 |
-| T10 | Payments and reconciliation lead | Payment lifecycle | Payment states, allocations, reconciliation, provider capability verification, exception handling | T08 + T09 + T06 |
-| T11 | Inventory and operations lead | Products, stock, purchasing, POS | Inventory workflows, stock movements, purchasing and stock-count requirements | T02 + T07 |
-| T12 | HR and reporting lead | Employee workflows and reports | HR requirements, leave/attendance boundaries, report definitions, compliance questions | T02 + T07; qualified compliance review where needed |
-| T13 | QA and traceability lead | Test strategy and acceptance evidence | Requirement-to-test map, test levels, negative security tests, release acceptance criteria | T06 + domain owners |
-| T14 | Operations and reliability lead | Deployment, monitoring, recovery, support | Environment separation, secrets handling, backups, recovery drills, monitoring and incident procedures | T05 + T06 |
-| T15 | Documentation integration and customer feedback coordinator | Cross-document consistency and feedback loop | Link checks, terminology consistency, contradiction register, review notes, customer feedback tracking | T01 + relevant domain reviewer |
+| T01 | Product owner / product lead | Product direction, priorities, final approvals | Target segment, success measures, Release 1 scope, decision ownership, documentation gate approval | Independent reviewer for clarity; product owner retains final approval |
+| T02 | Product analyst / customer researcher | Customer needs and requirements | Interview plan, personas, requirement IDs, workflow research, measurable outcomes | T01 |
+| T03 | UX/UI and accessibility designer | User journeys, interface and design system | Sitemap, onboarding flows, prototypes/specifications, responsive and accessibility rules | T02 + T14 |
+| T04 | Frontend / web experience lead | Web interface requirements and future implementation planning | Frontend boundaries, responsive behaviour, component contracts, browser support | T03 + T05 |
+| T05 | Backend / database architect | APIs, data model, application architecture | Architecture, module boundaries, ERD/data contracts, migration principles | T07 + T06 |
+| T06 | Network and cloud administrator | DNS, domains, networking, hosting, environments and connectivity | Network/deployment topology, DNS/TLS, access controls, environment separation, recovery runbook | T05 + T07 |
+| T07 | Cybersecurity and privacy lead | Threat model, identity, tenant boundaries and data protection | Threat model, authorization rules, privacy/retention requirements, security review checklist | T05; independent review for high-risk changes |
+| T08 | API, integrations and payments lead | External providers and integration behaviour | API contracts, payment provider capability checks, webhooks, idempotency, retries and failure states | T05 + T07 |
+| T09 | Finance and business-process specialist | Quotations, invoices, expenses, reconciliation and reporting rules | Financial workflows, calculations, auditability, reconciliation exceptions and compliance questions | T02 + T08 + T14 |
+| T10 | Social media manager / community lead | Social channels, publishing and community engagement | Channel strategy, content calendar, publishing approvals, moderation and engagement metrics | T01 + T11 |
+| T11 | Digital marketer / content and SEO specialist | Brand messaging, website content, campaigns and discovery | Content plan, SEO requirements, campaign measurement, landing-page copy and analytics requirements | T01 + T10 |
+| T12 | Sales, partnerships and growth lead | Customer acquisition and commercial partnerships | Lead pipeline, outreach process, partnership targets, CRM requirements and sales feedback | T01 + T02 |
+| T13 | Customer support and customer-success lead | Onboarding, help, feedback and retention | Support workflow, help content, escalation rules, feedback loop and service measures | T01 + T15 |
+| T14 | QA, accessibility and release-quality lead | Testability and acceptance evidence | Requirement-to-test mapping, regression plan, security-negative tests, accessibility and release criteria | T07 + relevant domain owners |
+| T15 | Operations, documentation and delivery coordinator | Cross-team coordination, handovers and operational readiness | Documentation consistency, task tracking, support/incident process, meeting notes and handovers | T01 + relevant domain reviewer |
 
-**Capacity note:** This is a starting allocation, not a claim that every person has the same skill or available hours. The product owner should adjust roles after a short skills and availability check. T01 is accountable for approval, but must not self-review their own authored technical or product documents.
+**Specialist coverage note:** This 15-person allocation is a starting team structure, not a claim that every specialist skill is already present. If ZetuBIZ later needs dedicated HR/payroll compliance, inventory/POS, legal/tax, data analytics, paid advertising, video/design production, or advanced network engineering expertise, assign a qualified contributor or external reviewer before approving that domain. Do not treat general experience as a substitute for regulated professional advice.
+
+**Capacity note:** Confirm each person's actual skills, availability, preferred work, and backup coverage before assigning by name. T01 owns final product decisions but must not self-review their own technical or product work.
 
 ## 3. Initial documentation work packages
 
