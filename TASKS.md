@@ -1,9 +1,9 @@
 # Tasks
 
-This document contains prioritized, actionable tasks for ZetuBIZ implementation.
+This document contains the prioritized documentation and implementation backlog for ZetuBIZ. **Documentation is the current work; implementation tasks below are blocked until the documentation approval gate is signed off.**
 
 **Last updated:** October 20, 2026  
-**Current milestone:** Milestone 1 - Brand and Design System
+**Current milestone:** Documentation Gate — Product, UX, Architecture, Data, Security, Team and QA specifications
 
 ## Priority Levels
 
@@ -12,7 +12,49 @@ This document contains prioritized, actionable tasks for ZetuBIZ implementation.
 - **P2:** Medium - nice to have
 - **P3:** Low - can defer
 
-## Milestone 1: Brand and Design System
+## Milestone D0 — Documentation and Product Readiness (CURRENT)
+
+Implementation is paused. Complete and review the following documentation deliverables before starting app initialization, migrations, or feature code.
+
+### P0 — Product scope and decisions
+- [ ] Confirm target launch segment and validate with customer interviews
+- [ ] Approve Release 1 scope and explicit exclusions
+- [ ] Resolve onboarding and workspace setup questions
+- [ ] Resolve subscription/entitlement assumptions
+- [ ] Record product decisions in `docs/DECISIONS.md`
+
+### P0 — UX and design specification
+- [ ] Produce complete information architecture and role-aware navigation map
+- [ ] Document each onboarding question, conditional logic, save/resume behavior, and completion state
+- [ ] Document workspace preparation progress and failure/retry states
+- [ ] Create screen-by-screen Release 1 UX specification
+- [ ] Define responsive behavior and mobile navigation
+- [ ] Define design tokens, typography, colors, components, interaction states, and accessibility rules
+- [ ] Specify quotation/invoice templates, preview, download, print, email, and secure-link behavior
+
+### P0 — Data, permissions, and architecture
+- [ ] Correct and review the proposed database model against Supabase Auth
+- [ ] Produce a data dictionary and ERD
+- [ ] Produce a module-by-module role/permission matrix
+- [ ] Define tenant isolation and cross-tenant negative tests
+- [ ] Resolve payment, PDF, email, background jobs, file storage, and deployment decisions in ADRs
+- [ ] Define API contracts, provider callbacks, idempotency, retries, and error behavior
+- [ ] Define audit events, retention, export, deletion, and backup/recovery
+
+### P0 — QA and operational readiness
+- [ ] Map each Release 1 requirement to acceptance tests
+- [ ] Define unit, integration, end-to-end, security, accessibility, and performance checks
+- [ ] Define staging/production separation and secret management
+- [ ] Define monitoring, incident response, support, and rollback procedures
+- [ ] Assign named owners and reviewers to workstreams
+- [ ] Reconcile README, master spec, architecture, database, status, tasks, and handover
+- [ ] Hold documentation review and record product-owner approval
+
+**Acceptance criteria for D0:** Every gate item is approved or explicitly deferred with a named owner and rationale; no contradictory instructions remain; implementation approval is recorded in the repository.
+
+---
+
+## Milestone 1: Brand and Design System (BLOCKED UNTIL D0 APPROVAL)
 
 ### P0 - Initialize Project
 - [ ] Initialize package.json with project metadata
