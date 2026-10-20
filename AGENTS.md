@@ -11,6 +11,10 @@ This document contains permanent instructions for all coding agents working on Z
 4. Read the implementation status (`docs/IMPLEMENTATION-STATUS.md`)
 5. Read the current tasks (`TASKS.md`)
 6. Read the latest handover notes (`docs/HANDOVER.md`)
+7. Read the expanded platform requirements (`docs/ALL-IN-ONE-PLATFORM-REQUIREMENTS.md`)
+8. Read the team workflow (`docs/TEAM-WORKFLOW.md`)
+
+**Documentation-first rule:** The project owner has directed that documentation must be reviewed and completed before implementation begins. Do not initialize the app, create migrations, configure production services, or start feature coding until the documentation gate in `docs/TEAM-WORKFLOW.md` is explicitly approved.
 
 **Required Actions:**
 - Inspect the actual code and Git status
@@ -235,4 +239,5 @@ For questions about:
 ---
 
 **Last updated:** October 20, 2026
+**Documentation-first directive:** Do not begin implementation until the product owner approves the documentation gate.
 **Maintained by:** Product team
