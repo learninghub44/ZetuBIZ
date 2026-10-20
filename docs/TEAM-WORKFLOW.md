@@ -213,3 +213,14 @@ A task is done only when:
 4. Create a prioritized documentation backlog with dependencies.
 5. Run the documentation gate review with the product owner.
 6. Keep implementation paused until explicit approval is recorded.
+
+
+## AI model and development-tool independence
+
+ZetuBIZ is AI-tool agnostic. Contributors may use any authorized AI model, coding assistant, IDE, terminal agent, local model, or no AI, provided they follow the same approved requirements, security rules, and review process.
+
+AI tools are assistants, not sources of truth. The repository's approved specifications and decisions take precedence. Every agent must inspect the current repository, read AGENTS.md and the relevant documentation, and work only within the assigned task. Do not rely on hidden prompts, model memory, or prior chat history.
+
+Do not provide AI tools with production secrets, credentials, tokens, or unnecessary personal/customer data. Verify generated work, test claims, and tool output. Until the product owner records approval of the documentation gate, agents may review and improve documentation but must not start application implementation or deploy features.
+
+Every task handover must use [Task Handover Template](TASK-HANDOVER-TEMPLATE.md). Record files changed, decisions, checks and exact results, risks, unresolved questions, dependencies, and a concrete next action. A task must be transferable to another person or AI tool without requiring access to the original conversation.
