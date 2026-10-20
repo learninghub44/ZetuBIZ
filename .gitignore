@@ -1,0 +1,65 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+public/dist/
+workers/dist/
+
+# Cloudflare
+.wrangler/
+wrangler.toml
+.env.wrangler
+
+# Supabase
+.supabase/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# User uploads (local development)
+uploads/
+
+# PDFs (local development)
+pdfs/
+
+# Database backups
+*.sql.backup
+*.dump
+
+# Keys and secrets
+*.key
+*.pem
+*.crt
+credentials.json
+service-account.json
