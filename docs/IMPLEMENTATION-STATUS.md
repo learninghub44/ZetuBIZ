@@ -12,8 +12,11 @@ This document tracks the implementation status of ZetuBIZ requirements.
 - [x] Add team workflow and documentation approval gate
 - [x] Link expanded requirements from README and master spec
 - [x] Correct Supabase Auth guidance in proposed database documentation
-- [ ] Complete screen-by-screen UX specification
-- [ ] Complete data dictionary/ERD and permissions matrix
+- [x] Draft screen-by-screen UX specification
+- [ ] Review and approve screen-by-screen UX specification
+- [x] Draft data dictionary and permissions matrix
+- [ ] Review data dictionary and permissions matrix; produce/approve ERD
+- [x] Add decision log and initial test traceability draft
 - [ ] Resolve architecture decisions and integration contracts
 - [ ] Complete requirement-to-test traceability and operational readiness review
 - [ ] Record product-owner approval of documentation gate
@@ -259,6 +262,11 @@ This document tracks the implementation status of ZetuBIZ requirements.
 - [x] Master specification (ZetuBIZ-MASTER-SPEC.md)
 - [x] Expanded platform requirements (ALL-IN-ONE-PLATFORM-REQUIREMENTS.md)
 - [x] Team workflow (TEAM-WORKFLOW.md)
+- [x] UX specification draft (UX-SPECIFICATION.md)
+- [x] Permissions matrix draft (PERMISSIONS-MATRIX.md)
+- [x] Data dictionary draft (DATA-DICTIONARY.md)
+- [x] Decision log (DECISIONS.md)
+- [x] Test traceability draft (TEST-TRACEABILITY.md)
 - [ ] Screen-by-screen UX specification
 - [ ] Data dictionary and ERD
 - [ ] Permissions matrix
@@ -283,9 +291,13 @@ This document tracks the implementation status of ZetuBIZ requirements.
 
 ## Known Issues
 
-### None
+### Documentation and schema risks
 
-No known issues at this time (greenfield project).
+1. The schema examples remain unverified and must not be run as migrations without review.
+2. Composite tenant-scoped foreign keys and matching RLS policies need explicit design and negative tests.
+3. Payment schema and payment allocation model need reconciliation so one payment can be allocated across multiple invoices.
+4. Architecture choices remain proposed; the build tool, PDF strategy, provider selection, and operational targets are not approved.
+5. UX, permissions, data dictionary, and test traceability documents are drafts awaiting review.
 
 ## Technical Debt
 
