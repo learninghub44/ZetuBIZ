@@ -23,6 +23,7 @@
 7. [Security and Compliance Risks](#7-security-and-compliance-risks)
 8. [UI Reference Resources](#8-ui-reference-resources)
 9. [Implementation Milestones](#9-implementation-milestones)
+10. [Supporting Specifications](#10-supporting-specifications)
 
 ---
 
@@ -1433,3 +1434,18 @@ This is the expanded master specification for ZetuBIZ, incorporating:
 - Updated implementation milestones
 
 **Location:** `docs/ZetuBIZ-MASTER-SPEC.md`
+
+
+# 10. Supporting Specifications
+
+Use these companion documents for details that should not be duplicated in this master file:
+
+- [All-in-One Platform Requirements](ALL-IN-ONE-PLATFORM-REQUIREMENTS.md)
+- [Screen-by-Screen UX Specification](UX-SPECIFICATION.md)
+- [Role and Permission Matrix](PERMISSIONS-MATRIX.md)
+- [Data Dictionary](DATA-DICTIONARY.md)
+- [Team Workflow](TEAM-WORKFLOW.md)
+- [Decision Log](DECISIONS.md)
+- [Test Traceability](TEST-TRACEABILITY.md)
+
+These documents are proposed until reviewed. Resolve contradictions through the decision log and update implementation status only after evidence is available.
