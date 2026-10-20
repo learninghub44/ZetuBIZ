@@ -34,15 +34,18 @@ Implementation is paused. Complete and review the following documentation delive
 
 ### P0 — Data, permissions, and architecture
 - [ ] Correct and review the proposed database model against Supabase Auth
-- [ ] Produce a data dictionary and ERD
-- [ ] Produce a module-by-module role/permission matrix
+- [x] Draft conceptual data dictionary and relationship baseline
+- [ ] Review data dictionary, produce/approve ERD, and reconcile against SQL examples
+- [x] Draft module-level role/permission matrix
+- [ ] Review and approve role/permission matrix
 - [ ] Define tenant isolation and cross-tenant negative tests
 - [ ] Resolve payment, PDF, email, background jobs, file storage, and deployment decisions in ADRs
 - [ ] Define API contracts, provider callbacks, idempotency, retries, and error behavior
 - [ ] Define audit events, retention, export, deletion, and backup/recovery
 
 ### P0 — QA and operational readiness
-- [ ] Map each Release 1 requirement to acceptance tests
+- [x] Draft initial requirement-to-test traceability matrix
+- [ ] Review, assign stable requirement IDs, and approve acceptance-test mapping
 - [ ] Define unit, integration, end-to-end, security, accessibility, and performance checks
 - [ ] Define staging/production separation and secret management
 - [ ] Define monitoring, incident response, support, and rollback procedures
