@@ -34,6 +34,7 @@ Start with these documents before proposing implementation work:
 - **[Implementation Status](docs/IMPLEMENTATION-STATUS.md)** — current verified implementation state.
 - **[Tasks](TASKS.md)** — proposed implementation backlog; task completion must be evidence-based.
 - **[Agent Instructions](AGENTS.md)** — repository rules for coding agents.
+- **[Team Workflow](docs/TEAM-WORKFLOW.md)** — roles, task lifecycle, GitHub review rules, decision-making, handovers, and the documentation approval gate.
 - **[Development Guide](docs/DEVELOPMENT.md)** — local development guidance.
 - **[Environment Variables](docs/ENVIRONMENT.md)** — configuration and secrets reference.
 - **[Testing Strategy](docs/TESTING.md)** — test strategy and acceptance gates.
