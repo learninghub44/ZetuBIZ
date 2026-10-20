@@ -34,7 +34,8 @@ Start with these documents before proposing implementation work:
 - **[Implementation Status](docs/IMPLEMENTATION-STATUS.md)** — current verified implementation state.
 - **[Tasks](TASKS.md)** — proposed implementation backlog; task completion must be evidence-based.
 - **[Agent Instructions](AGENTS.md)** — repository rules for coding agents.
-- **[Team Workflow](docs/TEAM-WORKFLOW.md)** — roles, task lifecycle, GitHub review rules, decision-making, handovers, and the documentation approval gate.
+- **[Team Workflow](docs/TEAM-WORKFLOW.md)** — roles, task lifecycle, GitHub review rules, AI-tool independence, handovers, and the documentation approval gate.
+- **[Task Handover Template](docs/TASK-HANDOVER-TEMPLATE.md)** — reusable, evidence-based handover format that works across people and AI tools.
 - **[UX Specification](docs/UX-SPECIFICATION.md)** — onboarding, workspace setup, navigation, dashboards, document studio, and Release 1 screens.
 - **[Permissions Matrix](docs/PERMISSIONS-MATRIX.md)** — proposed role presets, sensitive actions, tenant scope, and security tests.
 - **[Data Dictionary](docs/DATA-DICTIONARY.md)** — shared business entities, relationships, and data integrity rules.
