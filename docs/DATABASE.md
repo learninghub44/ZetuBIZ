@@ -10,33 +10,31 @@ This document describes the database schema, relationships, migrations, and Row 
 
 ## Schema Overview
 
-The database is designed with multi-tenancy as a core principle. Every business table includes a `business_id` foreign key to enforce tenant isolation.
+The database is designed with multi-tenancy as a core principle. Every tenant-owned table must include a `business_id` foreign key (or be demonstrably tenant-scoped through a parent relation with matching constraints and policies). Tenant isolation must be enforced by RLS and server-side authorization, not by naming conventions alone.
+
+**Important:** This document contains proposed schema examples, not executable or verified migrations. Before implementation, reconcile every table, foreign key, tenant boundary, deletion rule, index, status transition, and RLS policy into reviewed migrations. Do not run the illustrative SQL as a single production migration.
 
 ## Core Tables
 
 ### Users & Authentication
 
-#### users
+**Authoritative decision:** Supabase Auth owns authentication identities, password handling, credential recovery, and auth sessions. Do not create a second application-managed `users` table containing passwords or a `sessions` table containing bearer tokens.
+
+Application-owned user profile data may live in a profile table linked to the Supabase identity:
+
 ```sql
-CREATE TABLE users (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  email TEXT UNIQUE NOT NULL,
-  password_hash TEXT NOT NULL,
-  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-  updated_at TIMESTAMP WITH TIME ZONE default NOW()
+CREATE TABLE public.user_profiles (
+  id UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
+  display_name TEXT,
+  avatar_path TEXT,
+  preferred_language TEXT NOT NULL DEFAULT 'en',
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 ```
 
-#### sessions
-```sql
-CREATE TABLE sessions (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-  token TEXT UNIQUE NOT NULL,
-  expires_at TIMESTAMP WITH TIME ZONE NOT NULL,
-  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-);
-```
+This is a design example, not an applied migration. Use `auth.users(id)` as the foreign-key target for user identity references. Never copy password hashes, access tokens, refresh tokens, or session secrets into application tables. If Supabase Auth behavior changes, record and approve an architecture decision before changing this rule.
+
 
 ### Business & Tenancy
 
@@ -58,7 +56,7 @@ CREATE TABLE businesses (
   default_currency TEXT NOT NULL DEFAULT 'KES',
   timezone TEXT NOT NULL DEFAULT 'Africa/Nairobi',
   date_format TEXT NOT NULL DEFAULT 'DD/MM/YYYY',
-  owner_id UUID NOT NULL REFERENCES users(id),
+  owner_id UUID NOT NULL REFERENCES auth.users(id),
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
   UNIQUE(name, owner_id)
@@ -70,7 +68,7 @@ CREATE TABLE businesses (
 CREATE TABLE business_memberships (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   business_id UUID NOT NULL REFERENCES businesses(id) ON DELETE CASCADE,
-  user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
   role TEXT NOT NULL CHECK (role IN ('owner', 'admin', 'finance', 'manager', 'staff', 'viewer')),
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
@@ -110,7 +108,7 @@ CREATE TABLE branding (
 ```sql
 CREATE TABLE onboarding_progress (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
   business_id UUID REFERENCES businesses(id) ON DELETE SET NULL,
   current_step INTEGER NOT NULL DEFAULT 1,
   completed_steps JSONB NOT NULL DEFAULT '[]',
@@ -196,7 +194,7 @@ CREATE TABLE milestones (
 CREATE TABLE project_assignments (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   project_id UUID NOT NULL REFERENCES projects(id) ON DELETE CASCADE,
-  user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
   role TEXT NOT NULL,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
   UNIQUE(project_id, user_id)
@@ -338,7 +336,8 @@ CREATE TABLE invoice_snapshots (
 ```sql
 CREATE TABLE credit_notes (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  invoice_id UUID NOT NULL REFERENCES invoices(id) ON DELETE CASCADE,
+  business_id UUID NOT NULL REFERENCES businesses(id) ON DELETE CASCADE,
+  invoice_id UUID NOT NULL REFERENCES invoices(id) ON DELETE RESTRICT,
   number TEXT NOT NULL,
   amount DECIMAL(19,4) NOT NULL,
   reason TEXT NOT NULL,
@@ -439,7 +438,7 @@ CREATE TABLE reconciliation_imports (
   file_url TEXT,
   status TEXT NOT NULL DEFAULT 'processing' CHECK (status IN ('processing', 'completed', 'failed')),
   imported_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-  imported_by UUID REFERENCES users(id)
+  imported_by UUID REFERENCES auth.users(id)
 );
 ```
 
@@ -464,7 +463,7 @@ CREATE TABLE match_decisions (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   transaction_id UUID NOT NULL REFERENCES imported_transactions(id) ON DELETE CASCADE,
   payment_id UUID REFERENCES payments(id),
-  decided_by UUID NOT NULL REFERENCES users(id),
+  decided_by UUID NOT NULL REFERENCES auth.users(id),
   decided_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
   reason TEXT
 );
@@ -482,7 +481,7 @@ CREATE TABLE report_exports (
   file_url TEXT,
   file_name TEXT,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-  created_by UUID NOT NULL REFERENCES users(id)
+  created_by UUID NOT NULL REFERENCES auth.users(id)
 );
 ```
 
@@ -493,7 +492,7 @@ CREATE TABLE report_exports (
 CREATE TABLE notifications (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   business_id UUID NOT NULL REFERENCES businesses(id) ON DELETE CASCADE,
-  user_id UUID REFERENCES users(id) ON DELETE CASCADE,
+  user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
   type TEXT NOT NULL,
   title TEXT NOT NULL,
   message TEXT NOT NULL,
@@ -507,7 +506,7 @@ CREATE TABLE notifications (
 CREATE TABLE notification_preferences (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   business_id UUID NOT NULL REFERENCES businesses(id) ON DELETE CASCADE,
-  user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
   preferences_json JSONB NOT NULL DEFAULT '{}',
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
@@ -521,7 +520,7 @@ CREATE TABLE notification_preferences (
 ```sql
 CREATE TABLE audit_events (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  actor UUID REFERENCES users(id),
+  actor UUID REFERENCES auth.users(id),
   tenant_id UUID REFERENCES businesses(id),
   action TEXT NOT NULL,
   target_type TEXT,
