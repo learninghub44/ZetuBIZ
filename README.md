@@ -38,7 +38,8 @@ Start with these documents before proposing implementation work:
 - **[Agent Instructions](AGENTS.md)** — repository rules for coding agents.
 - **[Team Workflow](docs/TEAM-WORKFLOW.md)** — roles, task lifecycle, GitHub review rules, AI-tool independence, handovers, and the documentation approval gate.
 - **[Task Handover Template](docs/TASK-HANDOVER-TEMPLATE.md)** — reusable, evidence-based handover format that works across people and AI tools.
-- **[15-Member Team Assignment Matrix](docs/TEAM-ASSIGNMENT-MATRIX.md)** — proposed role allocation, work-package owners, reviewers, dependencies, and acceptance evidence.
+- **[15-Member Team Assignment Matrix](docs/TEAM-ASSIGNMENT-MATRIX.md)** — proposed roles spanning product, engineering, network/cloud administration, cybersecurity, social media, digital marketing, sales, support, and operations.
+- **[Workforce and Industry Role Catalogue](docs/WORKFORCE-AND-INDUSTRY-ROLES.md)** — customer professions and workflows, including network administrators, social media marketers, service businesses, and role-based access boundaries.
 - **[UX Specification](docs/UX-SPECIFICATION.md)** — onboarding, workspace setup, navigation, dashboards, document studio, and Release 1 screens.
 - **[Permissions Matrix](docs/PERMISSIONS-MATRIX.md)** — proposed role presets, sensitive actions, tenant scope, and security tests.
 - **[Data Dictionary](docs/DATA-DICTIONARY.md)** — shared business entities, relationships, and data integrity rules.
