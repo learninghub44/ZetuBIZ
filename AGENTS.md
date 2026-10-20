@@ -241,3 +241,14 @@ For questions about:
 **Last updated:** October 20, 2026
 **Documentation-first directive:** Do not begin implementation until the product owner approves the documentation gate.
 **Maintained by:** Product team
+
+
+## AI Model and Tool Independence
+
+- ZetuBIZ is not tied to any particular AI provider, model, IDE, or coding agent. Use any authorized tool or work manually while following these repository rules.
+- The approved repository documentation is the source of truth; AI output and conversation memory are not.
+- Before work, inspect the current repository, read the relevant documentation, confirm the assigned task, and check existing changes to avoid overwriting others.
+- Do not assume another model has the same context. Record findings, decisions, test evidence, and next steps in the repository or task record.
+- Never expose secrets or unnecessary personal/customer data to AI tools.
+- Do not start application implementation until the product owner has formally approved the documentation gate.
+- Use [docs/TASK-HANDOVER-TEMPLATE.md](docs/TASK-HANDOVER-TEMPLATE.md) for every meaningful handover.
