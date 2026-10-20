@@ -25,6 +25,12 @@ This document provides a concise handover for the next coding agent (OpenCode).
 - Database setup
 - Infrastructure configuration
 
+## Consolidated Documentation
+
+- **Unified reading copy:** `docs/ZetuBIZ-CONSOLIDATED-HANDBOOK.md` combines the current 18 documentation files in one long-form document.
+- The source documents remain the editable references for their subjects. If any source changes, regenerate the consolidated handbook before handover.
+- Consolidation is not product-owner approval; implementation remains blocked until the documentation gate is explicitly approved and recorded.
+
 ## Current Architecture
 
 **Planned Stack:**
