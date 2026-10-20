@@ -45,12 +45,13 @@ Implementation is paused. Complete and review the following documentation delive
 - [ ] Define audit events, retention, export, deletion, and backup/recovery
 
 ### P0 — Team ownership and coordination
-- [x] Draft 15-member role-based assignment and ownership matrix (`docs/TEAM-ASSIGNMENT-MATRIX.md`)
+- [x] Draft 15-member role-based assignment and ownership matrix, including infrastructure, cybersecurity, marketing, sales, and support (`docs/TEAM-ASSIGNMENT-MATRIX.md`)
 - [ ] Map T01–T15 to actual members after confirming skills and availability
 - [ ] Create or link task records for each D0 work package
 - [ ] Confirm primary and backup reviewers for security-sensitive domains
 
 ### P0 — QA and operational readiness
+- [x] Add broad workforce and industry role catalogue (`docs/WORKFORCE-AND-INDUSTRY-ROLES.md`)
 - [x] Draft initial requirement-to-test traceability matrix
 - [ ] Review, assign stable requirement IDs, and approve acceptance-test mapping
 - [ ] Define unit, integration, end-to-end, security, accessibility, and performance checks
