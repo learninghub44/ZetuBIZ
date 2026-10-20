@@ -17,6 +17,7 @@ This document contains the prioritized documentation and implementation backlog 
 Implementation is paused. Complete and review the following documentation deliverables before starting app initialization, migrations, or feature code.
 
 ### P0 — Product scope and decisions
+- [x] Consolidate the 18 current documentation files into `docs/ZetuBIZ-CONSOLIDATED-HANDBOOK.md` (reading copy; source files remain authoritative for edits)
 - [ ] Confirm target launch segment and validate with customer interviews
 - [ ] Approve Release 1 scope and explicit exclusions
 - [ ] Resolve onboarding and workspace setup questions
