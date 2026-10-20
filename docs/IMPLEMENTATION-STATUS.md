@@ -3,9 +3,22 @@
 This document tracks the implementation status of ZetuBIZ requirements.
 
 **Last updated:** October 20, 2026  
-**Project status:** Greenfield - Specification complete, implementation pending
+**Project status:** Documentation expansion in progress — implementation explicitly paused pending product-owner approval
 
 ## Milestone Status
+
+### Milestone D0 — Documentation and Product Readiness
+- [x] Add expanded all-in-one platform requirements
+- [x] Add team workflow and documentation approval gate
+- [x] Link expanded requirements from README and master spec
+- [x] Correct Supabase Auth guidance in proposed database documentation
+- [ ] Complete screen-by-screen UX specification
+- [ ] Complete data dictionary/ERD and permissions matrix
+- [ ] Resolve architecture decisions and integration contracts
+- [ ] Complete requirement-to-test traceability and operational readiness review
+- [ ] Record product-owner approval of documentation gate
+- **Status:** In progress
+- **Implementation remains blocked until approval is recorded**
 
 ### Milestone 0 — Repository Audit ✅
 - [x] Inspect existing repository
@@ -244,6 +257,12 @@ This document tracks the implementation status of ZetuBIZ requirements.
 
 ### Product Documentation
 - [x] Master specification (ZetuBIZ-MASTER-SPEC.md)
+- [x] Expanded platform requirements (ALL-IN-ONE-PLATFORM-REQUIREMENTS.md)
+- [x] Team workflow (TEAM-WORKFLOW.md)
+- [ ] Screen-by-screen UX specification
+- [ ] Data dictionary and ERD
+- [ ] Permissions matrix
+- [ ] Architecture decision log
 - [x] Architecture (ARCHITECTURE.md)
 - [x] Database schema (DATABASE.md)
 - [x] Development guide (DEVELOPMENT.md)
@@ -306,11 +325,13 @@ None
 
 ## Next Steps
 
-1. Initialize project with package.json
-2. Set up Supabase project
-3. Create initial database migrations
-4. Implement Milestone 1 (Brand and Design System)
-5. Implement Milestone 2 (Authentication and Onboarding)
+1. Continue documentation work using `TASKS.md` and `docs/TEAM-WORKFLOW.md`.
+2. Complete the screen-by-screen UX and onboarding specification.
+3. Complete the data dictionary, ERD, and permissions matrix.
+4. Review architecture decisions, integrations, testing, and operations documentation.
+5. Reconcile contradictions across all repository documents.
+6. Obtain and record product-owner approval of the documentation gate.
+7. Only after approval, create the implementation plan and begin project initialization.
 
 ## Notes
 
@@ -323,5 +344,5 @@ None
 
 ---
 
-**Status:** Specification complete, implementation pending  
+**Status:** Documentation expansion in progress; implementation paused pending approval  
 **Last updated:** October 20, 2026
