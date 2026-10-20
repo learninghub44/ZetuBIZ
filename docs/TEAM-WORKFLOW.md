@@ -181,7 +181,11 @@ Approval must be recorded in the repository with date, approver, approved scope/
 - Update the implementation status only with verifiable evidence.
 - Record legal/compliance claims with official source and last-verified date.
 
-## 10. Handover template
+## 10. Team assignment and ownership matrix
+
+Use [TEAM-ASSIGNMENT-MATRIX.md](TEAM-ASSIGNMENT-MATRIX.md) as the proposed role allocation for the 15-person team. It uses numbered slots until actual names, skills, and availability are confirmed. The matrix defines accountable owners, reviewers, dependencies, and acceptance evidence for documentation work packages. The product owner must map the slots to real members and update the task tracker before work is assigned. Do not infer individual identities or treat this proposed allocation as confirmed staffing.
+
+## 11. Handover template
 
 Every handover must include:
 - Current branch and latest commit/PR.
@@ -194,7 +198,7 @@ Every handover must include:
 - Exact next task and its acceptance criteria.
 - Confirmation that secrets and customer data were not added.
 
-## 11. Definition of done
+## 12. Definition of done
 
 A task is done only when:
 - Scope and acceptance criteria are met.
@@ -205,9 +209,9 @@ A task is done only when:
 - No untracked temporary workaround or unresolved critical blocker remains.
 - The next contributor can continue without guessing.
 
-## 12. Immediate team actions
+## 13. Immediate team actions
 
-1. Assign named owners to the workstreams and documents.
+1. Map the proposed slots in `TEAM-ASSIGNMENT-MATRIX.md` to named members after confirming skills and availability.
 2. Review the current repository and mark contradictions instead of assuming existing docs are correct.
 3. Complete the missing UX, permission, data dictionary, ADR, compliance, operations, and test traceability documents.
 4. Create a prioritized documentation backlog with dependencies.
