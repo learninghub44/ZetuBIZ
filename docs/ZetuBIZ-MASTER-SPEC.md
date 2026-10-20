@@ -26,6 +26,14 @@
 
 ---
 
+## Expanded platform scope
+
+The initial specification below remains part of the project history and core workflow definition. The full all-in-one platform scope, including additional CRM, inventory, purchasing, HR/payroll, communications, website studio, AI, call centre, accounting, subscription administration, cross-module workflows, non-functional requirements, release sequencing, and acceptance criteria, is maintained in **[ALL-IN-ONE-PLATFORM-REQUIREMENTS.md](ALL-IN-ONE-PLATFORM-REQUIREMENTS.md)**.
+
+That requirements document is the companion scope reference for future revisions. Requirements remain planned until implementation and verification are recorded in [IMPLEMENTATION-STATUS.md](IMPLEMENTATION-STATUS.md).
+
+---
+
 # 1. Repository Audit
 
 ## 1.1 Current State
