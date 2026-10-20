@@ -4,7 +4,7 @@ This document provides a concise handover for the next coding agent (OpenCode).
 
 ## Current State
 
-**Project Status:** Greenfield - Specification complete, implementation pending
+**Project Status:** Documentation/specification work in progress; implementation blocked pending product-owner approval
 
 **What ZetuBIZ Currently Does:**
 - Nothing implemented yet (greenfield project)
@@ -151,14 +151,14 @@ Do not run setup or migration commands yet. Follow the documentation gate in `do
 
 - **Project:** ZetuBIZ - Business management platform
 - **Status:** Greenfield, specification complete
-- **Next Task:** Initialize project and implement Milestone 1
-- **Priority:** Start with brand and design system
-- **Timeline:** 12 milestones planned
-- **Documentation:** Complete and ready for implementation
+- **Next Task:** Map T01–T15 to actual team members, confirm skills and availability, and continue the documentation review.
+- **Priority:** Complete and approve the documentation gate; do not start application implementation yet.
+- **Timeline:** Implementation milestones remain blocked pending approval.
+- **Documentation:** Drafts exist and require review, reconciliation, and formal product-owner approval.
 
 ---
 
 **Handed over by:** Cascade  
 **Date:** October 20, 2026  
 **To:** OpenCode  
-**Status:** Ready to begin implementation
+**Status:** Documentation handover only; implementation is blocked pending recorded product-owner approval
