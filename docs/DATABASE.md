@@ -348,12 +348,13 @@ CREATE TABLE credit_notes (
 
 ### Payments
 
+**Relationship rule:** A payment is a money event and must not be structurally restricted to exactly one invoice. Link it to one or more invoices through `payment_allocations`. The illustrative `payments` table therefore must not require `invoice_id`; the allocation table is the authoritative relationship. Reconcile all payment examples and tests against this rule before migration design.
+
 #### payments
 ```sql
 CREATE TABLE payments (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   business_id UUID NOT NULL REFERENCES businesses(id) ON DELETE CASCADE,
-  invoice_id UUID NOT NULL REFERENCES invoices(id) ON DELETE CASCADE,
   provider TEXT NOT NULL,
   provider_transaction_id TEXT,
   amount DECIMAL(19,4) NOT NULL,
@@ -750,6 +751,11 @@ supabase migration down
 ```
 
 ## Data Integrity
+
+### Tenant-scoped relationships
+- Add composite tenant constraints where practical so a quotation/invoice/payment/project/customer relationship cannot point across workspaces.
+- Validate parent-child business ownership in database constraints and/or trusted transaction functions; application checks alone are insufficient.
+- Review cascade rules carefully. Finalized invoices, payments, credit notes, and audit evidence must not be erased by deleting a customer or workspace record without an approved retention/deletion policy.
 
 ### Constraints
 - All foreign keys have ON DELETE CASCADE or SET NULL as appropriate
