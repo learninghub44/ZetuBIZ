@@ -8,7 +8,7 @@
 **Version:** 1.0  
 **Last updated:** 20 October 2026
 
-> This document expands the existing master specification. It is a requirements document, not evidence that any feature exists in code. ReaTech360 is used as a functional benchmark only; ZetuBIZ must have its own implementation, visual identity, copy, and product decisions.
+> This document expands the existing master specification. It is a requirements document, not evidence that any feature exists in code. Product research may inform the team’s understanding of customer expectations, but all ZetuBIZ requirements, designs, copy, and implementation decisions must be independently documented and owned by the ZetuBIZ team.
 
 ## 1. Purpose and product direction
 
