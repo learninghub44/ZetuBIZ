@@ -9,6 +9,7 @@ This document tracks the implementation status of ZetuBIZ requirements.
 
 ### Milestone D0 — Documentation and Product Readiness
 - [x] Add expanded all-in-one platform requirements
+- [x] Consolidate 18 documentation files into `ZetuBIZ-CONSOLIDATED-HANDBOOK.md` for unified review
 - [x] Add team workflow and documentation approval gate
 - [x] Draft AI-tool-agnostic task handover template
 - [x] Draft 15-member team assignment and ownership matrix
