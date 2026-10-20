@@ -35,6 +35,11 @@ Start with these documents before proposing implementation work:
 - **[Tasks](TASKS.md)** — proposed implementation backlog; task completion must be evidence-based.
 - **[Agent Instructions](AGENTS.md)** — repository rules for coding agents.
 - **[Team Workflow](docs/TEAM-WORKFLOW.md)** — roles, task lifecycle, GitHub review rules, decision-making, handovers, and the documentation approval gate.
+- **[UX Specification](docs/UX-SPECIFICATION.md)** — onboarding, workspace setup, navigation, dashboards, document studio, and Release 1 screens.
+- **[Permissions Matrix](docs/PERMISSIONS-MATRIX.md)** — proposed role presets, sensitive actions, tenant scope, and security tests.
+- **[Data Dictionary](docs/DATA-DICTIONARY.md)** — shared business entities, relationships, and data integrity rules.
+- **[Decision Log](docs/DECISIONS.md)** — proposed/accepted product and architecture decisions.
+- **[Test Traceability](docs/TEST-TRACEABILITY.md)** — requirement-to-test mapping and release gates.
 - **[Development Guide](docs/DEVELOPMENT.md)** — local development guidance.
 - **[Environment Variables](docs/ENVIRONMENT.md)** — configuration and secrets reference.
 - **[Testing Strategy](docs/TESTING.md)** — test strategy and acceptance gates.
