@@ -43,13 +43,20 @@ Implementation is paused. Complete and review the following documentation delive
 - [ ] Define API contracts, provider callbacks, idempotency, retries, and error behavior
 - [ ] Define audit events, retention, export, deletion, and backup/recovery
 
+### P0 — Team ownership and coordination
+- [x] Draft 15-member role-based assignment and ownership matrix
+- [ ] Map T01–T15 to actual members after confirming skills and availability
+- [ ] Create or link task records for each D0 work package
+- [ ] Confirm primary and backup reviewers for security-sensitive domains
+
 ### P0 — QA and operational readiness
 - [x] Draft initial requirement-to-test traceability matrix
 - [ ] Review, assign stable requirement IDs, and approve acceptance-test mapping
 - [ ] Define unit, integration, end-to-end, security, accessibility, and performance checks
 - [ ] Define staging/production separation and secret management
 - [ ] Define monitoring, incident response, support, and rollback procedures
-- [ ] Assign named owners and reviewers to workstreams
+- [x] Draft role-based owner/reviewer allocation for all 15 team slots
+- [ ] Assign actual named owners and reviewers to workstreams
 - [ ] Reconcile README, master spec, architecture, database, status, tasks, and handover
 - [ ] Hold documentation review and record product-owner approval
 
