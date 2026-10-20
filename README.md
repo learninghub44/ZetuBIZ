@@ -25,6 +25,8 @@ These are planned modules, not claims of existing functionality. The team will d
 
 ## Current documentation
 
+**[Consolidated Documentation Handbook](docs/ZetuBIZ-CONSOLIDATED-HANDBOOK.md)** — one long-form reading copy combining all 18 current documentation files for review and handover. The individual source files remain editable references; regenerate the handbook after source changes. This consolidation does not approve implementation.
+
 Start with these documents before proposing implementation work:
 
 - **[All-in-One Platform Requirements](docs/ALL-IN-ONE-PLATFORM-REQUIREMENTS.md)** — expanded module catalogue, shared workflows, non-functional requirements, release sequence, acceptance criteria, and open decisions.
