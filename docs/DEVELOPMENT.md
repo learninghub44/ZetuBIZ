@@ -476,12 +476,13 @@ Create `.vscode/settings.json`:
 
 ## Next Steps
 
-After completing setup:
-1. Read `docs/ZetuBIZ-MASTER-SPEC.md`
-2. Read `docs/ARCHITECTURE.md`
-3. Check `docs/IMPLEMENTATION-STATUS.md`
-4. Pick a task from `TASKS.md`
-5. Start implementing
+Before any implementation:
+1. Read `AGENTS.md` and `docs/TEAM-WORKFLOW.md`.
+2. Read `docs/ALL-IN-ONE-PLATFORM-REQUIREMENTS.md` and `docs/ZetuBIZ-MASTER-SPEC.md`.
+3. Review architecture, database, testing, deployment, environment, implementation status, and handover documents.
+4. Complete the documentation-first approval gate in `docs/TEAM-WORKFLOW.md`.
+5. Obtain and record explicit product-owner approval before initializing or implementing the application.
+6. Until approval is recorded, contribute only to assigned documentation and review tasks.
 
 ---
 
