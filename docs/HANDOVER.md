@@ -95,10 +95,15 @@ This document provides a concise handover for the next coding agent (OpenCode).
 5. `docs/ARCHITECTURE.md`
 6. `docs/DATABASE.md`
 7. `docs/IMPLEMENTATION-STATUS.md`
-8. `TASKS.md`
+8. `docs/UX-SPECIFICATION.md`
+9. `docs/PERMISSIONS-MATRIX.md`
+10. `docs/DATA-DICTIONARY.md`
+11. `docs/DECISIONS.md`
+12. `docs/TEST-TRACEABILITY.md`
+13. `TASKS.md`
 
 **Acceptance criteria:**
-1. UX screen map and onboarding flow are documented.
+1. UX screen map and onboarding flow are documented and reviewed.
 2. Release 1 scope and exclusions are approved.
 3. Permissions and tenant-isolation matrix is documented.
 4. Data model and architecture decisions are reviewed.
